@@ -118,13 +118,14 @@
       .stage {
         position: relative;
         display: grid;
-        grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.9fr);
+        gap: 1rem;
         min-height: 0;
+        padding: 0 1rem 1rem;
       }
 
       .frame {
         position: relative;
-        margin: 1rem;
+        margin: 0;
         border-radius: 1.25rem;
         overflow: hidden;
         background: #111;
@@ -159,9 +160,9 @@
 
       .caption {
         display: grid;
-        align-content: center;
-        gap: 1rem;
-        padding: 1.5rem 1.5rem 1.5rem 0;
+        align-content: start;
+        gap: 0.8rem;
+        padding: 0.25rem 0 0;
       }
 
       .caption h2 {
@@ -175,7 +176,7 @@
         color: var(--muted);
         line-height: 1.65;
         font-size: 1.08rem;
-        max-width: 34ch;
+        max-width: 62ch;
       }
 
       .caption .meta {
@@ -202,6 +203,14 @@
         overflow: auto;
         border-top: 1px solid var(--line);
         background: rgba(255,255,255,0.35);
+      }
+
+      .footer-note {
+        padding: 0 1rem 1rem;
+        margin: 0;
+        color: var(--muted);
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        line-height: 1.5;
       }
 
       .thumb {
@@ -245,14 +254,6 @@
           min-height: auto;
         }
 
-        .stage {
-          grid-template-columns: 1fr;
-        }
-
-        .caption {
-          padding: 0 1.5rem 1.2rem;
-        }
-
         .thumbs {
           grid-template-columns: repeat(5, minmax(0, 1fr));
         }
@@ -287,20 +288,14 @@
           <div>
             <h1 class="title">Barfi Gallery</h1>
             <p class="subtitle">
-              A little slideshow of Barfi being curious, cozy, and very cute.
-              The gallery advances on its own every few seconds, and you can use
-              the side buttons to move through the photos.
+              A cute slideshow of Barfi's photos. It advances by itself, and
+              the side buttons let you move back and forth.
             </p>
           </div>
           <div class="status" id="status">Photo 1 of 27</div>
         </header>
 
         <section class="stage" aria-label="Barfi photo slideshow">
-          <div class="frame">
-            <div class="badge">Barfi the Maltipoo</div>
-            <img id="slide" class="photo is-visible" alt="Barfi photo" />
-          </div>
-
           <aside class="caption">
             <div class="meta">
               <span class="pill" id="mood">Playful</span>
@@ -310,9 +305,17 @@
             <h2 id="captionTitle"></h2>
             <p id="captionText"></p>
           </aside>
+
+          <div class="frame">
+            <div class="badge">Barfi the Maltipoo</div>
+            <img id="slide" class="photo is-visible" alt="Barfi photo" />
+          </div>
         </section>
 
         <section class="thumbs" id="thumbs" aria-label="Photo thumbnails"></section>
+        <p class="footer-note">
+          Barfi, fluffy as ever, in a few favorite moments.
+        </p>
       </section>
     </main>
 
@@ -321,189 +324,189 @@
         {
           file: "assets/gallery-01.jpeg",
           title: "Tiny face, huge charm",
-          text: "Barfi looks right at the camera like she knows she is the star of the whole room.",
+          text: "A close-up of Barfi on the bed, with her curls and big eyes front and center.",
           mood: "Curious",
           place: "Bedside",
         },
         {
           file: "assets/gallery-02.jpeg",
           title: "Ready for adventure",
-          text: "Wrapped up and ready to go, Barfi brings her own little burst of joy to the trail.",
+          text: "Barfi in a red jacket on a wooden bench, looking ready for a cool walk outside.",
           mood: "Out exploring",
           place: "Nature walk",
         },
         {
           file: "assets/gallery-03.jpeg",
           title: "A soft landing",
-          text: "Barfi and her tennis ball, proving that cozy moments can still be playtime.",
+          text: "Barfi on the carpet with a purple ball beside her, looking sweet and settled.",
           mood: "Cozy",
           place: "Living room",
         },
         {
           file: "assets/gallery-04.jpeg",
           title: "Window seat queen",
-          text: "She sits up tall like she is supervising the world from the passenger seat.",
+          text: "Barfi sitting upright in the car with a flower clip in her fur, watching the world go by.",
           mood: "Proud",
           place: "Car ride",
         },
         {
           file: "assets/gallery-05.jpeg",
           title: "Forest mode",
-          text: "A fresh jacket, a leash, and a forest backdrop make Barfi look picture perfect.",
+          text: "Barfi standing on a bench in the forest in her red jacket, tail up and alert.",
           mood: "Exploring",
           place: "Wooded trail",
         },
         {
           file: "assets/gallery-06.jpeg",
           title: "Bedtime buddy",
-          text: "Barfi keeps watch from the middle of the bed, comfy and completely content.",
+          text: "Barfi resting on a bedspread with heart patterns, looking relaxed and at home.",
           mood: "Resting",
           place: "Bedroom",
         },
         {
           file: "assets/gallery-07.jpeg",
           title: "Parking-garage glam",
-          text: "Even in a car, Barfi finds a way to look like a little celebrity on the move.",
+          text: "Barfi perched on the back seat, turning to look at the camera in the car.",
           mood: "Stylish",
           place: "In transit",
         },
         {
           file: "assets/gallery-08.jpeg",
           title: "Sweet sofa portrait",
-          text: "Barfi pauses on the couch with the kind of face that could melt a whole afternoon.",
+          text: "Barfi sitting on the sofa with soft evening light around her.",
           mood: "Gentle",
           place: "Living room",
         },
         {
           file: "assets/gallery-09.jpeg",
           title: "Blanket fort royalty",
-          text: "Wrapped in warm colors, Barfi looks like she has claimed the coziest spot in the house.",
+          text: "Barfi nestled in orange blankets, with a little toy in front of her.",
           mood: "Snuggly",
           place: "On the bed",
         },
         {
           file: "assets/gallery-10.jpeg",
           title: "Pink-perfumed perfection",
-          text: "Nested in a soft pink bed, Barfi gives a very convincing performance of 'I live here now.'",
+          text: "Barfi tucked into a pink bed on the car seat, looking very comfy.",
           mood: "Relaxed",
           place: "Car seat",
         },
         {
           file: "assets/gallery-11.jpeg",
           title: "City stroll sparkle",
-          text: "The bright sign behind her only makes Barfi shine more as she explores the plaza.",
+          text: "Barfi in a red sweater standing near the bright SLTX sign downtown.",
           mood: "Adventurous",
           place: "Downtown",
         },
         {
           file: "assets/gallery-12.jpeg",
           title: "Looking back with love",
-          text: "Barfi turns to check on her person, because every great outing needs a little reassurance.",
+          text: "Barfi sitting in the car and glancing back over her shoulder.",
           mood: "Affectionate",
           place: "Car ride",
         },
         {
           file: "assets/gallery-13.jpeg",
           title: "Sunlit floof alert",
-          text: "A cozy carpet, soft light, and Barfi doing her best fluffy sculpture impression.",
+          text: "Barfi sitting on a carpet with sunshine across the floor beside her.",
           mood: "Soft",
           place: "Home",
         },
         {
           file: "assets/gallery-14.jpeg",
           title: "Big wave energy",
-          text: "Barfi raises a paw like she is greeting the whole gallery with a tiny hello.",
+          text: "Barfi lifting one paw in front of dry grass like she is waving hello.",
           mood: "Friendly",
           place: "Outdoors",
         },
         {
           file: "assets/gallery-15.jpeg",
           title: "Little explorer pose",
-          text: "She stands in the open air like she has a map in her head and a mission to enjoy the day.",
+          text: "Barfi standing on a rock outdoors with a tongue-out lick in progress.",
           mood: "Exploring",
           place: "Trail",
         },
         {
           file: "assets/gallery-16.jpeg",
           title: "Rails and sunshine",
-          text: "Barfi waits by the tracks like a patient traveler with excellent taste in backdrops.",
+          text: "Barfi standing on the train platform with the tracks stretching behind her.",
           mood: "Calm",
           place: "Station",
         },
         {
           file: "assets/gallery-17.jpeg",
           title: "Sidewalk superstar",
-          text: "A bright patch of grass, a little shadow, and Barfi looking impossibly photogenic.",
+          text: "Barfi on the sidewalk beside green grass, looking up with a calm expression.",
           mood: "Fresh",
           place: "Neighborhood walk",
         },
         {
           file: "assets/gallery-18.jpeg",
           title: "Top-down cutie",
-          text: "Seen from above, Barfi looks like a tidy little cloud with paws and a tail.",
+          text: "Barfi seen from above on a carpet, making a perfect little white shape.",
           mood: "Playful",
           place: "Living room",
         },
         {
           file: "assets/gallery-19.jpeg",
           title: "Holiday hallway star",
-          text: "Barfi stands under the festive greenery looking like the invited guest everyone wanted to see.",
+          text: "Barfi standing under a festive arch with her red sweater on.",
           mood: "Festive",
           place: "Downtown",
         },
         {
           file: "assets/gallery-20.jpeg",
           title: "Night bench elegance",
-          text: "Under the city lights, Barfi turns into a tiny evening portrait with a soft expression.",
+          text: "Barfi sitting on a dark bench with a softly blurred city background.",
           mood: "Elegant",
           place: "Night walk",
         },
         {
           file: "assets/gallery-21.jpeg",
           title: "Strong little sit",
-          text: "Barfi on the boardwalk, holding a pose that says she knows exactly what she is doing.",
+          text: "Barfi sitting on the wooden walkway in front of a black wall mural.",
           mood: "Confident",
           place: "Boardwalk",
         },
         {
           file: "assets/gallery-22.jpeg",
           title: "Mountain backdrop moment",
-          text: "Clear blue sky, rocky hills, and Barfi looking like the cutest hiking companion around.",
+          text: "Barfi sitting on a rock with blue sky and mountains behind her.",
           mood: "Outdoorsy",
           place: "Scenic overlook",
         },
         {
           file: "assets/gallery-23.jpeg",
           title: "Happy floor loaf",
-          text: "A warm rug, a curious look, and Barfi being wonderfully herself on the hardwood floor.",
+          text: "Barfi standing on a rug beside the couch, looking up from the floor.",
           mood: "Homey",
           place: "Living room",
         },
         {
           file: "assets/gallery-24.jpeg",
           title: "Tiny shadow, big heart",
-          text: "From above, Barfi becomes an adorable little shape of fluff against the carpet.",
+          text: "Barfi seen from above on a carpet, making a perfect little white shape.",
           mood: "Calm",
           place: "Living room",
         },
         {
           file: "assets/gallery-25.jpeg",
           title: "Benchside pause",
-          text: "Barfi takes a quiet seat and looks back with the kind of expression that always gets a smile.",
+          text: "Barfi sitting on a dark bench with a softly blurred city background.",
           mood: "Thoughtful",
           place: "Evening outing",
         },
         {
           file: "assets/gallery-26.jpeg",
           title: "National park cameo",
-          text: "Barfi gives the park sign a very polite approval before continuing the adventure.",
+          text: "Barfi sitting near the Carlsbad Caverns sign with bright blue sky overhead.",
           mood: "Touring",
           place: "Carlsbad Caverns",
         },
         {
           file: "assets/gallery-27.jpeg",
           title: "Texture and fluff",
-          text: "Against the rustic wood, Barfi looks even softer and even more like a little puff of joy.",
+          text: "Barfi sitting in front of a rustic wood wall, framed by hanging cables.",
           mood: "Serene",
           place: "Garden corner",
         },
