@@ -81,7 +81,7 @@
         box-shadow: 0 1rem 2.5rem rgba(38, 50, 67, 0.08);
         overflow: hidden;
         display: grid;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto auto;
         min-height: calc(100vh - 2rem);
       }
 
@@ -99,13 +99,6 @@
         font-size: clamp(2rem, 4vw, 3.4rem);
         line-height: 0.95;
         letter-spacing: 0;
-      }
-
-      .subtitle {
-        margin: 0.45rem 0 0;
-        color: var(--muted);
-        max-width: 55ch;
-        line-height: 1.55;
       }
 
       .status {
@@ -287,10 +280,6 @@
         <header>
           <div>
             <h1 class="title">Barfi Gallery</h1>
-            <p class="subtitle">
-              A cute slideshow of Barfi's photos. It advances by itself, and
-              the side buttons let you move back and forth.
-            </p>
           </div>
           <div class="status" id="status">Photo 1 of 27</div>
         </header>
@@ -314,7 +303,8 @@
 
         <section class="thumbs" id="thumbs" aria-label="Photo thumbnails"></section>
         <p class="footer-note">
-          Barfi, fluffy as ever, in a few favorite moments.
+          A cute slideshow of Barfi's photos. It plays on its own, and the
+          side buttons let you move back and forth.
         </p>
       </section>
     </main>
@@ -324,42 +314,42 @@
         {
           file: "assets/gallery-01.jpeg",
           title: "Tiny face, huge charm",
-          text: "A close-up of Barfi on the bed, with her curls and big eyes front and center.",
+          text: "Barfi is curled up on a cozy seat in bright sunlight, looking soft and quietly curious.",
           mood: "Curious",
-          place: "Bedside",
+          place: "Window seat",
         },
         {
           file: "assets/gallery-02.jpeg",
-          title: "Ready for adventure",
-          text: "Barfi in a red jacket on a wooden bench, looking ready for a cool walk outside.",
+          title: "Trail day sparkle",
+          text: "Barfi is bundled in a red jacket beside a rushing stream, looking ready for a proper adventure.",
           mood: "Out exploring",
-          place: "Nature walk",
+          place: "Forest trail",
         },
         {
           file: "assets/gallery-03.jpeg",
-          title: "A soft landing",
-          text: "Barfi on the carpet with a purple ball beside her, looking sweet and settled.",
+          title: "Ball-and-floof moment",
+          text: "Barfi is lying on the carpet with her purple ball, all ears, fluff, and sweet attention.",
           mood: "Cozy",
           place: "Living room",
         },
         {
           file: "assets/gallery-04.jpeg",
-          title: "Window seat queen",
-          text: "Barfi sitting upright in the car with a flower clip in her fur, watching the world go by.",
+          title: "Car ride cutie",
+          text: "Barfi is sitting tall in the car with a tiny flower clip, turning into the light like a little star.",
           mood: "Proud",
           place: "Car ride",
         },
         {
           file: "assets/gallery-05.jpeg",
-          title: "Forest mode",
-          text: "Barfi standing on a bench in the forest in her red jacket, tail up and alert.",
+          title: "Forest lookout",
+          text: "Barfi is standing on a wooden bench in the woods, wearing her red jacket and looking wonderfully alert.",
           mood: "Exploring",
           place: "Wooded trail",
         },
         {
           file: "assets/gallery-06.jpeg",
-          title: "Bedtime buddy",
-          text: "Barfi resting on a bedspread with heart patterns, looking relaxed and at home.",
+          title: "Cozy bed pause",
+          text: "Barfi is resting on a heart-patterned bedspread, small and calm in a very comfy room.",
           mood: "Resting",
           place: "Bedroom",
         },
