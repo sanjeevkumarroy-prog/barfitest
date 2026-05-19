@@ -311,195 +311,33 @@
 
     <script>
       const slides = [
-        {
-          file: "assets/gallery-01.jpeg",
-          title: "01. Sunshine snuggle",
-          text: "Barfi is lounging in a bright window patch, looking soft, cozy, and very much adored.",
-          mood: "Cozy",
-          place: "Window seat",
-        },
-        {
-          file: "assets/gallery-02.jpeg",
-          title: "02. Red coat explorer",
-          text: "Barfi is wearing her red jacket by the water, with big adventure energy and a tiny serious face.",
-          mood: "Out exploring",
-          place: "Forest trail",
-        },
-        {
-          file: "assets/gallery-03.jpeg",
-          title: "03. Tennis-ball cuddle",
-          text: "Barfi is stretched out on the carpet with her purple ball, looking sweet, calm, and ready to play again.",
-          mood: "Playful",
-          place: "Living room",
-        },
-        {
-          file: "assets/gallery-04.jpeg",
-          title: "04. Car window pose",
-          text: "Barfi is perched in the car with a flower clip in her fur, giving us her very elegant side profile.",
-          mood: "Proud",
-          place: "Car ride",
-        },
-        {
-          file: "assets/gallery-05.jpeg",
-          title: "05. Trail-top lookout",
-          text: "Barfi is standing on a wooden bench in the woods, red jacket on, looking like the tiniest trail captain.",
-          mood: "Adventurous",
-          place: "Wooded trail",
-        },
-        {
-          file: "assets/gallery-06.jpeg",
-          title: "06. Bedspread buddy",
-          text: "Barfi is resting on a heart-patterned bedspread, tiny and peaceful in a perfectly cozy room.",
-          mood: "Resting",
-          place: "Bedroom",
-        },
-        {
-          file: "assets/gallery-07.jpeg",
-          title: "07. Back-seat stare",
-          text: "Barfi is standing tall in the car seat and checking in with the camera like a little passenger pro.",
-          mood: "Stylish",
-          place: "In transit",
-        },
-        {
-          file: "assets/gallery-08.jpeg",
-          title: "08. Sofa sit-and-think",
-          text: "Barfi is sitting on the sofa with a calm, thoughtful look and the fluffiest little ears.",
-          mood: "Gentle",
-          place: "Living room",
-        },
-        {
-          file: "assets/gallery-09.jpeg",
-          title: "09. Blanket nest",
-          text: "Barfi is tucked into warm blankets on the bed, looking cozy enough to stay there all day.",
-          mood: "Snuggly",
-          place: "On the bed",
-        },
-        {
-          file: "assets/gallery-10.jpeg",
-          title: "10. Pink car-bundle",
-          text: "Barfi is curled into a pink blanket in the car seat, looking warm, safe, and very content.",
-          mood: "Relaxed",
-          place: "Car seat",
-        },
-        {
-          file: "assets/gallery-11.jpeg",
-          title: "11. City sign stop",
-          text: "Barfi is standing in a red sweater beneath the bright city sign, looking like a tiny downtown star.",
-          mood: "Festive",
-          place: "Downtown",
-        },
-        {
-          file: "assets/gallery-12.jpeg",
-          title: "12. Back-seat glance",
-          text: "Barfi is standing in the car with her head turned back, giving a sweet little check-in look.",
-          mood: "Affectionate",
-          place: "Car ride",
-        },
-        {
-          file: "assets/gallery-13.jpeg",
-          title: "13. Sunny carpet sit",
-          text: "Barfi is sitting on the carpet in a beam of light, looking soft, calm, and very lovable.",
-          mood: "Soft",
-          place: "Home",
-        },
-        {
-          file: "assets/gallery-14.jpeg",
-          title: "14. Nose lick hello",
-          text: "Barfi is standing in front of tall grass, mid nose-lick and lifting one paw like a tiny greeting.",
-          mood: "Friendly",
-          place: "Outdoors",
-        },
-        {
-          file: "assets/gallery-15.jpeg",
-          title: "15. Mountain pause",
-          text: "Barfi is standing on a rocky ledge with mountains behind her, looking brave, bright, and beautifully posed.",
-          mood: "Exploring",
-          place: "Trail",
-        },
-        {
-          file: "assets/gallery-16.jpeg",
-          title: "16. Trackside pose",
-          text: "Barfi is standing on the station platform with the tracks behind her, calm as can be in the sunshine.",
-          mood: "Calm",
-          place: "Station",
-        },
-        {
-          file: "assets/gallery-17.jpeg",
-          title: "17. Grass-edge glance",
-          text: "Barfi is standing by a bright patch of grass on the path, giving the camera a curious little look.",
-          mood: "Fresh",
-          place: "Neighborhood walk",
-        },
-        {
-          file: "assets/gallery-18.jpeg",
-          title: "18. Floor-flop pose",
-          text: "Barfi is stretched out on the wood floor in a sleepy, silly little pose with her tail puffed behind her.",
-          mood: "Playful",
-          place: "Living room",
-        },
-        {
-          file: "assets/gallery-19.jpeg",
-          title: "19. Holiday archway",
-          text: "Barfi is standing under a festive arch in a red sweater, looking ready for a cheerful holiday stroll.",
-          mood: "Festive",
-          place: "Downtown",
-        },
-        {
-          file: "assets/gallery-20.jpeg",
-          title: "20. Evening bench",
-          text: "Barfi is sitting on a dark bench at night, with a soft blur of lights behind her and a very classy pose.",
-          mood: "Elegant",
-          place: "Night walk",
-        },
-        {
-          file: "assets/gallery-21.jpeg",
-          title: "21. Boardwalk pause",
-          text: "Barfi is standing on a wooden boardwalk in front of a bold mural, looking composed and a little serious.",
-          mood: "Confident",
-          place: "Boardwalk",
-        },
-        {
-          file: "assets/gallery-22.jpeg",
-          title: "22. Blue-sky lookout",
-          text: "Barfi is perched on a rock with a huge blue sky and mountain ridge behind her, looking beautifully tiny.",
-          mood: "Outdoorsy",
-          place: "Scenic overlook",
-        },
-        {
-          file: "assets/gallery-23.jpeg",
-          title: "23. Rug-side stare",
-          text: "Barfi is standing beside the patterned rug and looking up like she has something important to say.",
-          mood: "Homey",
-          place: "Living room",
-        },
-        {
-          file: "assets/gallery-24.jpeg",
-          title: "24. Carpet hello",
-          text: "Barfi is looking up from the carpet with a tiny smile and a very polite little stance.",
-          mood: "Calm",
-          place: "Living room",
-        },
-        {
-          file: "assets/gallery-25.jpeg",
-          title: "25. Benchside pause",
-          text: "Barfi is sitting on a dark bench at dusk, turned sideways in a thoughtful, camera-ready pose.",
-          mood: "Thoughtful",
-          place: "Evening outing",
-        },
-        {
-          file: "assets/gallery-26.jpeg",
-          title: "26. Park sign cameo",
-          text: "Barfi is sitting beside the Carlsbad Caverns sign under a bright blue sky, looking like a happy travel buddy.",
-          mood: "Touring",
-          place: "Carlsbad Caverns",
-        },
-        {
-          file: "assets/gallery-27.jpeg",
-          title: "27. Rustic portrait",
-          text: "Barfi is sitting in front of a rustic wood wall with cables above her, calm, neat, and perfectly posed.",
-          mood: "Serene",
-          place: "Garden corner",
-        },
+        { file: "assets/gallery-01.jpeg" },
+        { file: "assets/gallery-02.jpeg" },
+        { file: "assets/gallery-03.jpeg" },
+        { file: "assets/gallery-04.jpeg" },
+        { file: "assets/gallery-05.jpeg" },
+        { file: "assets/gallery-06.jpeg" },
+        { file: "assets/gallery-07.jpeg" },
+        { file: "assets/gallery-08.jpeg" },
+        { file: "assets/gallery-09.jpeg" },
+        { file: "assets/gallery-10.jpeg" },
+        { file: "assets/gallery-11.jpeg" },
+        { file: "assets/gallery-12.jpeg" },
+        { file: "assets/gallery-13.jpeg" },
+        { file: "assets/gallery-14.jpeg" },
+        { file: "assets/gallery-15.jpeg" },
+        { file: "assets/gallery-16.jpeg" },
+        { file: "assets/gallery-17.jpeg" },
+        { file: "assets/gallery-18.jpeg" },
+        { file: "assets/gallery-19.jpeg" },
+        { file: "assets/gallery-20.jpeg" },
+        { file: "assets/gallery-21.jpeg" },
+        { file: "assets/gallery-22.jpeg" },
+        { file: "assets/gallery-23.jpeg" },
+        { file: "assets/gallery-24.jpeg" },
+        { file: "assets/gallery-25.jpeg" },
+        { file: "assets/gallery-26.jpeg" },
+        { file: "assets/gallery-27.jpeg" },
       ];
 
       const slide = document.getElementById("slide");
@@ -522,12 +360,12 @@
         slide.classList.remove("is-visible");
         requestAnimationFrame(() => {
           slide.src = current.file;
-          slide.alt = current.title;
-          captionTitle.textContent = current.title;
-          captionText.textContent = current.text;
+          slide.alt = "Cute Barfi";
+          captionTitle.textContent = "Cute Barfi";
+          captionText.textContent = "Cute Barfi";
           status.textContent = `Photo ${index + 1} of ${slides.length}`;
-          mood.textContent = current.mood;
-          place.textContent = current.place;
+          mood.textContent = "Cute Barfi";
+          place.textContent = `Photo ${index + 1}`;
           time.textContent = `Auto play every ${intervalMs / 1000}s`;
           document.querySelectorAll(".thumb").forEach((btn, i) => {
             btn.classList.toggle("is-active", i === index);
@@ -551,8 +389,8 @@
         const btn = document.createElement("button");
         btn.className = "thumb";
         btn.type = "button";
-        btn.setAttribute("aria-label", `Show photo ${i + 1}: ${item.title}`);
-        btn.innerHTML = `<img src="${item.file}" alt="${item.title} thumbnail" />`;
+        btn.setAttribute("aria-label", `Show photo ${i + 1}: Cute Barfi`);
+        btn.innerHTML = `<img src="${item.file}" alt="Cute Barfi thumbnail" />`;
         btn.addEventListener("click", () => {
           index = i;
           render();
