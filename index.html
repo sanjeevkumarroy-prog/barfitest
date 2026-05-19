@@ -311,33 +311,195 @@
 
     <script>
       const slides = [
-        { file: "assets/gallery-01.jpeg" },
-        { file: "assets/gallery-02.jpeg" },
-        { file: "assets/gallery-03.jpeg" },
-        { file: "assets/gallery-04.jpeg" },
-        { file: "assets/gallery-05.jpeg" },
-        { file: "assets/gallery-06.jpeg" },
-        { file: "assets/gallery-07.jpeg" },
-        { file: "assets/gallery-08.jpeg" },
-        { file: "assets/gallery-09.jpeg" },
-        { file: "assets/gallery-10.jpeg" },
-        { file: "assets/gallery-11.jpeg" },
-        { file: "assets/gallery-12.jpeg" },
-        { file: "assets/gallery-13.jpeg" },
-        { file: "assets/gallery-14.jpeg" },
-        { file: "assets/gallery-15.jpeg" },
-        { file: "assets/gallery-16.jpeg" },
-        { file: "assets/gallery-17.jpeg" },
-        { file: "assets/gallery-18.jpeg" },
-        { file: "assets/gallery-19.jpeg" },
-        { file: "assets/gallery-20.jpeg" },
-        { file: "assets/gallery-21.jpeg" },
-        { file: "assets/gallery-22.jpeg" },
-        { file: "assets/gallery-23.jpeg" },
-        { file: "assets/gallery-24.jpeg" },
-        { file: "assets/gallery-25.jpeg" },
-        { file: "assets/gallery-26.jpeg" },
-        { file: "assets/gallery-27.jpeg" },
+        {
+          file: "assets/gallery-01.jpeg",
+          title: "Trail Captain Barfi",
+          text: "Red jacket, wooden bench, forest path, and one tiny boss deciding where the walk goes next.",
+          mood: "Trail boss",
+          place: "Woodland bench",
+        },
+        {
+          file: "assets/gallery-02.jpeg",
+          title: "Streamside Sweetheart",
+          text: "Barfi poses by the rushing water in her red coat, looking very brave for someone so fluffy.",
+          mood: "Adventure mode",
+          place: "By the stream",
+        },
+        {
+          file: "assets/gallery-03.jpeg",
+          title: "Polite Little Puff",
+          text: "A tidy carpet sit with those round eyes that seem to ask, very sweetly, where the treats are.",
+          mood: "Patient",
+          place: "Carpet corner",
+        },
+        {
+          file: "assets/gallery-04.jpeg",
+          title: "Tiny Rug Inspector",
+          text: "Barfi stands beside the patterned rug like she is supervising the whole living room with quiet authority.",
+          mood: "Curious",
+          place: "Living room floor",
+        },
+        {
+          file: "assets/gallery-05.jpeg",
+          title: "Boardwalk Thinker",
+          text: "A thoughtful little side pose on the wooden boards, with a dramatic wall making Barfi look extra important.",
+          mood: "Composed",
+          place: "Boardwalk",
+        },
+        {
+          file: "assets/gallery-06.jpeg",
+          title: "Bedtime Close-Up",
+          text: "Barfi leans into the camera from the bed, all curls, button nose, and soft little mystery.",
+          mood: "Cuddly",
+          place: "On the bed",
+        },
+        {
+          file: "assets/gallery-07.jpeg",
+          title: "Pink Blanket Passenger",
+          text: "Tucked into a pink car blanket, Barfi looks cozy enough to turn every errand into a luxury ride.",
+          mood: "Snug",
+          place: "Car seat",
+        },
+        {
+          file: "assets/gallery-08.jpeg",
+          title: "Queen of the Bedspread",
+          text: "A tiny white cloud resting on the big yellow bedspread, fully aware that comfort is serious business.",
+          mood: "Relaxed",
+          place: "Bedroom",
+        },
+        {
+          file: "assets/gallery-09.jpeg",
+          title: "Downtown Diva",
+          text: "Barfi sits beneath the bright SLTX sign, looking small, stylish, and completely city-ready.",
+          mood: "City star",
+          place: "Downtown",
+        },
+        {
+          file: "assets/gallery-10.jpeg",
+          title: "Car Window Flower Girl",
+          text: "Standing tall by the car window with a flower clip, Barfi gives main-character energy from the passenger side.",
+          mood: "Fancy",
+          place: "Car ride",
+        },
+        {
+          file: "assets/gallery-11.jpeg",
+          title: "Holiday Arch Cutie",
+          text: "Red sweater, festive arch, tiny serious face: Barfi is clearly taking seasonal modeling very seriously.",
+          mood: "Festive",
+          place: "Holiday walkway",
+        },
+        {
+          file: "assets/gallery-12.jpeg",
+          title: "Sunshine Sidewalk Smile",
+          text: "Barfi pauses by the bright green grass, half in sunshine and fully in adorable mode.",
+          mood: "Sunny",
+          place: "Sidewalk",
+        },
+        {
+          file: "assets/gallery-13.jpeg",
+          title: "Night Bench Princess",
+          text: "On a dark bench with soft lights behind her, Barfi looks ready for a tiny evening portrait session.",
+          mood: "Elegant",
+          place: "Evening outing",
+        },
+        {
+          file: "assets/gallery-14.jpeg",
+          title: "Rustic Little Model",
+          text: "Barfi sits in front of the textured wood wall, looking neat, calm, and quietly photogenic.",
+          mood: "Poised",
+          place: "Rustic wall",
+        },
+        {
+          file: "assets/gallery-15.jpeg",
+          title: "Mountain-View Muse",
+          text: "With blue sky and mountains behind her, Barfi turns the rocky lookout into her personal photo set.",
+          mood: "Scenic",
+          place: "Mountain view",
+        },
+        {
+          file: "assets/gallery-16.jpeg",
+          title: "Desert Path Explorer",
+          text: "Barfi stands outdoors against a wide blue sky, looking brave, bright, and wonderfully tiny in the landscape.",
+          mood: "Explorer",
+          place: "Outdoor trail",
+        },
+        {
+          file: "assets/gallery-17.jpeg",
+          title: "Blanket Fort Boss",
+          text: "Nestled in orange blankets with a toy nearby, Barfi looks like she has claimed the coziest kingdom.",
+          mood: "Snuggly",
+          place: "Blanket nest",
+        },
+        {
+          file: "assets/gallery-18.jpeg",
+          title: "Carpet Hello",
+          text: "Barfi looks up from the carpet with a tiny smile, as if she has been waiting politely for applause.",
+          mood: "Sweet",
+          place: "Carpet",
+        },
+        {
+          file: "assets/gallery-19.jpeg",
+          title: "Floofy Floor Flop",
+          text: "A top-down sploot on the wood floor, starring Barfi's little body and magnificent puff tail.",
+          mood: "Silly",
+          place: "Wood floor",
+        },
+        {
+          file: "assets/gallery-20.jpeg",
+          title: "Sofa Daydreamer",
+          text: "Sitting upright on the sofa, Barfi looks off to the side like she is planning something charming.",
+          mood: "Thoughtful",
+          place: "Sofa",
+        },
+        {
+          file: "assets/gallery-21.jpeg",
+          title: "Back-Seat Ballerina",
+          text: "Barfi stretches tall in the car with perfect posture, giving the back seat a tiny runway moment.",
+          mood: "Graceful",
+          place: "Back seat",
+        },
+        {
+          file: "assets/gallery-22.jpeg",
+          title: "Purple Ball Bestie",
+          text: "Barfi lounges with her purple ball, looking sweet, serious, and absolutely ready for another round.",
+          mood: "Playful",
+          place: "Carpet playtime",
+        },
+        {
+          file: "assets/gallery-23.jpeg",
+          title: "Window Watcher",
+          text: "Standing tall in the car, Barfi watches the world outside with her fluffy tail stealing the show.",
+          mood: "Alert",
+          place: "Car window",
+        },
+        {
+          file: "assets/gallery-24.jpeg",
+          title: "Carlsbad Cameo",
+          text: "Barfi sits by the Carlsbad Caverns sign like a tiny travel ambassador with excellent curls.",
+          mood: "Tourist",
+          place: "Carlsbad Caverns",
+        },
+        {
+          file: "assets/gallery-25.jpeg",
+          title: "Trackside Tiny Star",
+          text: "On the train platform with tracks stretching behind her, Barfi makes the whole station look cuter.",
+          mood: "Steady",
+          place: "Train tracks",
+        },
+        {
+          file: "assets/gallery-26.jpeg",
+          title: "Nose-Lick Wave",
+          text: "One paw up and tongue out, Barfi delivers the most charming little greeting beside the tall grass.",
+          mood: "Funny",
+          place: "Outdoor grass",
+        },
+        {
+          file: "assets/gallery-27.jpeg",
+          title: "Evening Bench Side-Eye",
+          text: "A side-profile bench pose under soft evening lights, with Barfi looking tiny, tidy, and deeply important.",
+          mood: "Dramatic",
+          place: "Night bench",
+        },
       ];
 
       const slide = document.getElementById("slide");
@@ -360,12 +522,12 @@
         slide.classList.remove("is-visible");
         requestAnimationFrame(() => {
           slide.src = current.file;
-          slide.alt = "Cute Barfi";
-          captionTitle.textContent = "Cute Barfi";
-          captionText.textContent = "Cute Barfi";
+          slide.alt = current.title;
+          captionTitle.textContent = current.title;
+          captionText.textContent = current.text;
           status.textContent = `Photo ${index + 1} of ${slides.length}`;
-          mood.textContent = "Cute Barfi";
-          place.textContent = `Photo ${index + 1}`;
+          mood.textContent = current.mood;
+          place.textContent = current.place;
           time.textContent = `Auto play every ${intervalMs / 1000}s`;
           document.querySelectorAll(".thumb").forEach((btn, i) => {
             btn.classList.toggle("is-active", i === index);
@@ -389,8 +551,8 @@
         const btn = document.createElement("button");
         btn.className = "thumb";
         btn.type = "button";
-        btn.setAttribute("aria-label", `Show photo ${i + 1}: Cute Barfi`);
-        btn.innerHTML = `<img src="${item.file}" alt="Cute Barfi thumbnail" />`;
+        btn.setAttribute("aria-label", `Show photo ${i + 1}: ${item.title}`);
+        btn.innerHTML = `<img src="${item.file}" alt="${item.title} thumbnail" />`;
         btn.addEventListener("click", () => {
           index = i;
           render();
